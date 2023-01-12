@@ -18,8 +18,45 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "5ec89ab8d4d72cc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Linux/Commands.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a2755dbe8aca373",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Frontend/SPA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "618beb0fbc1e7b69",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AWS/EKS.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -85,7 +122,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Typescript/데코레이터 (Decorator).md",
+                "file": "AWS/EKS.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +139,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Typescript/데코레이터 (Decorator).md",
+                "file": "AWS/EKS.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +162,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Typescript/데코레이터 (Decorator).md"
+                "file": "AWS/EKS.md"
               }
             }
           }
@@ -146,10 +183,12 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "8364579f021ee8a6",
+  "active": "618beb0fbc1e7b69",
   "lastOpenFiles": [
+    "Frontend/SPA.md",
+    "Linux/Commands.md",
+    "Typescript/데코레이터 (Decorator).md",
     "Trading/Premium Arbitrage.md",
-    "Backend/데코레이터를 이용한 Nest.js에서의 AOP 적용.md",
-    "Typescript/데코레이터 (Decorator).md"
+    "Backend/데코레이터를 이용한 Nest.js에서의 AOP 적용.md"
   ]
 }
