@@ -1,26 +1,50 @@
 {
   "main": {
-    "id": "b6483e26eb051d17",
+    "id": "8e57991923fcc164",
     "type": "split",
     "children": [
       {
-        "id": "1b487c74e49f4454",
+        "id": "791446c721683f6f",
         "type": "tabs",
         "children": [
           {
-            "id": "267abcac06a39011",
+            "id": "2e47b9ebf1fd3f19",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Flutter (Dart)/Dart programming language.md",
+                "file": "Typescript/데코레이터 (Decorator).md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "5adf1ecfffd451f0",
+            "id": "5ec89ab8d4d72cc6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Typescript/데코레이터 (Decorator).md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "7a2755dbe8aca373",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Frontend/SPA.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "618beb0fbc1e7b69",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -31,21 +55,22 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
   },
   "left": {
-    "id": "1d523811b4cc6575",
+    "id": "eb7f7d07f1acb2e9",
     "type": "split",
     "children": [
       {
-        "id": "956784e9434e0523",
+        "id": "5269a8125c3aee59",
         "type": "tabs",
         "children": [
           {
-            "id": "26959e9e528897e7",
+            "id": "8364579f021ee8a6",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
@@ -55,7 +80,7 @@
             }
           },
           {
-            "id": "83a070551b21bc92",
+            "id": "47d8f2f5028c00e2",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -70,7 +95,7 @@
             }
           },
           {
-            "id": "71cb916ed8b6428e",
+            "id": "93c96cac498ecfe2",
             "type": "leaf",
             "state": {
               "type": "starred",
@@ -81,23 +106,23 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "a2a8c17bbb907434",
+    "id": "83db3f41cc8266cd",
     "type": "split",
     "children": [
       {
-        "id": "e94546f6b44f916b",
+        "id": "a83a83d3a0ef61f1",
         "type": "tabs",
         "children": [
           {
-            "id": "b4581885672dfc0d",
+            "id": "10b3aefbea61580e",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Flutter (Dart)/Dart programming language.md",
+                "file": "Typescript/데코레이터 (Decorator).md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -109,19 +134,19 @@
             }
           },
           {
-            "id": "9349847c8a27bef6",
+            "id": "efa22502e417d0ff",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Flutter (Dart)/Dart programming language.md",
+                "file": "Typescript/데코레이터 (Decorator).md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
             }
           },
           {
-            "id": "86517e3c5619521e",
+            "id": "a3d5791aa94bbef5",
             "type": "leaf",
             "state": {
               "type": "tag",
@@ -132,12 +157,12 @@
             }
           },
           {
-            "id": "545080c4b50fb27b",
+            "id": "6b4addebfbdc29ce",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Flutter (Dart)/Dart programming language.md"
+                "file": "Typescript/데코레이터 (Decorator).md"
               }
             }
           }
@@ -158,17 +183,14 @@
       "canvas:Create new canvas": false
     }
   },
-  "active": "267abcac06a39011",
+  "active": "5ec89ab8d4d72cc6",
   "lastOpenFiles": [
-    "Flutter (Dart)/FreeCodeCamp.md",
-    "Typescript/데코레이터 (Decorator).md",
-    "메모/하고 싶은 일.md",
-    "Trading/Premium Arbitrage.md",
-    "Linux/Commands.md",
-    "Frontend/SPA.md",
-    "AWS/EKS.md",
     "Backend/데코레이터를 이용한 Nest.js에서의 AOP 적용.md",
     "Flutter (Dart)/Dart programming language.md",
-    "coinone/Untitled.md"
+    "Linux/Commands.md",
+    "Frontend/SPA.md",
+    "Typescript/데코레이터 (Decorator).md",
+    "AWS/EKS.md",
+    "Trading/Premium Arbitrage.md"
   ]
 }

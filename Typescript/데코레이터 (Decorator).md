@@ -5,7 +5,7 @@
 
 # 데코레이터 팩토리 (Decorator Factories)
 
-```
+```typescript
 function color(value: string) { // 데코레이터 팩토리
 	return function (target) { // 데코레이터
 		// 'target'과 'value' 변수를 가지고 무언가를 수행합니다
@@ -26,7 +26,7 @@ TypeScript에서 단일 선언에서 여러 데코레이터를 사용할 때 다
 
 여러 데코레이터가 단일 선언에 적용되는 경우 예시를 보여드리겠습니다.
 
-```
+```typescript
 function first() {  
   console.log('first(): factory evaluated');  
   return (target: any, propertyKey: string, descriptor: PropertyDescriptor) => {  
@@ -69,7 +69,7 @@ first(): called
 # 클래스 데코레이터 (Class Decorators)
 
 클래스 데코레이터는 클래스 선언 직전에 선언되며, 해당 클래스의 생성자에 적용됩니다.
-```
+```typescript
 @sealed
 class BugReport {
   type = "report";
@@ -86,7 +86,7 @@ function sealed(constructor: Function) {
 }
 ```
 
-```
+```typescript
 function reportableClassDecorator<T extends { new (...args: any[]): {} }>(  
   constructor: T,  
 ) {  
@@ -133,7 +133,7 @@ Property 'reportingURL' does not exist on type 'BugReport'.
 
 > 참고  스크립트 대상이 ‘ES5’보다 낮은 경우 반환 값은 무시됩니다.
 
-```
+```typescript
 function printClassName(enabled: boolean) {  
   return function (  
     target: any,  
@@ -189,7 +189,7 @@ class Person {
 
 이 정보를 사용하여 다음 예와 같이 프로퍼티에 대한 메타데이터를 기록할 수 있습니다:
 
-```
+```typescript
 class Greeter {  
   @format("Hello, %s")  
   greeting: string;  
@@ -207,7 +207,7 @@ class Greeter {
 
 다음 함수 선언을 사용하여 `@format` 데코레이터와 `getFormat` 함수를 정의 할 수 있습니다:
 
-```
+```typescript
 import "reflect-metadata";  
 
 const formatMetadataKey = Symbol("format");  
@@ -242,7 +242,7 @@ TypeScript에는 데코레이터가 있는 선언에 대해 특정 타입의 메
 
 **tsconfig.json**:
 
-```
+```typescript
 {  
   "compilerOptions": {  
     "target": "ES5",  
@@ -256,7 +256,7 @@ TypeScript에는 데코레이터가 있는 선언에 대해 특정 타입의 메
 
 다음 예제에서 이를 확인할 수 있습니다.
 
-```
+```typescript
 import 'reflect-metadata';  
   
 class Point {  
@@ -318,7 +318,7 @@ line.start = new Point(0, 0);
 
 TypeScript 컴파일러는 `@Reflect.metadata` 데코레이터를 사용하여 디자인-타임 타입 정보를 주입합니다. 다음 TypeScript와 동일하다고 생각할 수 있습니다.
 
-```
+```typescript
 class Line {  
   private _start: Point;  
   private _end: Point;  
