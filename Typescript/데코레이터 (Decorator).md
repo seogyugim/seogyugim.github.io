@@ -1,9 +1,11 @@
 
-# 정의
+# 데코레이터 (Decorator)
+
+## 정의
 
 데코레이터는 클래스 선언, 메서드, 접근자, 프로퍼티, 또는 매개변수에 첨부할 수 있는 특수한 종류의 선언입니다.  사용 형식은 `@expression`과 같으며, 여기서 `@expression`은 데코레이팅 된 선언에 대한 정보와 함께 런타임에 호출되는 함수여야 합니다. 데코레이터는 클래스와 클래스 멤버에 어노테이션과 메타-프로그래밍 구문을 추가할 수 있는 방법을 제공합니다.
 
-# 데코레이터 팩토리 (Decorator Factories)
+## 데코레이터 팩토리 (Decorator Factories)
 
 ```typescript
 function color(value: string) { // 데코레이터 팩토리
@@ -17,7 +19,7 @@ function color(value: string) { // 데코레이터 팩토리
 - https://www.typescriptlang.org/docs/handbook/decorators.html#handbook-content
 ```
 
-# 데코레이터 합성 (Decorator Composition)
+## 데코레이터 합성 (Decorator Composition)
 
 TypeScript에서 단일 선언에서 여러 데코레이터를 사용할 때 다음 단계가 수행됩니다.
 
@@ -58,7 +60,7 @@ second(): called
 first(): called
 ```
 
-# 데코레이터 평가 (Decorator Evaluation)
+## 데코레이터 평가 (Decorator Evaluation)
 
 클래스에서 다양한 선언에 데코레이터를 적용하는 방법은 다음과 같이 잘 정의되어 있습니다.
 1. _Parameter Decorators_, followed by _Method_, _Accessor_, or _Property Decorators_ are applied for each instance member.
@@ -66,7 +68,7 @@ first(): called
 3.  _Parameter Decorators_ are applied for the constructor.
 4.  _Class Decorators_ are applied for the class.
 
-# 클래스 데코레이터 (Class Decorators)
+## 클래스 데코레이터 (Class Decorators)
 
 클래스 데코레이터는 클래스 선언 직전에 선언되며, 해당 클래스의 생성자에 적용됩니다.
 ```typescript
@@ -117,7 +119,7 @@ bug.reportingURL;
 Property 'reportingURL' does not exist on type 'BugReport'.
 ```
 
-# 메소드 데코레이터 (Method Decorators)
+## 메소드 데코레이터 (Method Decorators)
 
 메서드 데코레이터는 메서드 선언 직전에 선언됩니다. 데코레이터는 메서드의 프로퍼티 설명자(Property Descriptor) 에 적용되며 메서드 정의를 관찰, 수정 또는 대체하는 데 사용할 수 있습니다. 메서드 데코레이터는 선언 파일, 오버로드 또는 기타 주변 컨텍스트(예: `선언` 클래스)에서 사용할 수 없습니다.
 
@@ -158,7 +160,7 @@ class Person {
 }
 ```
 
-# 접근자 데코레이터 (Accessor Decorators)
+## 접근자 데코레이터 (Accessor Decorators)
 
 접근자 데코레이터는 접근자 선언 바로 전에 선언됩니다. 접근자 데코레이터는 접근자의 _프로퍼티 설명자_에 적용되며 접근자의 정의를 관찰, 수정 또는 교체하는 데 사용할 수 있습니다. 접근자 데코레이터는 선언 파일이나 다른 주변 컨텍스트(예: `선언` 클래스)에서 사용할 수 없습니다.
 
@@ -176,7 +178,7 @@ class Person {
 
 > 참고  스크립트 대상이 ‘ES5’보다 낮은 경우 반환 값은 무시됩니다.
 
-# 프로퍼티 데코레이터 (Property Decorators)
+## 프로퍼티 데코레이터 (Property Decorators)
 
 프로퍼티 데코레이터는 프로퍼티 선언 바로 전에 선언됩니다. 프로퍼티 데코레이터는 선언 파일이나 다른 주변 컨텍스트(예: `선언` 클래스)에서 사용할 수 없습니다.
 
@@ -226,7 +228,7 @@ function getFormat(target: any, propertyKey: string) {
 > 참고  이 예제에는 `reflect-metadata` 라이브러리가 필요합니다. `reflect-metadata` 라이브러리에 대한 자세한 내용은 [메타데이터](https://www.typescriptlang.org/ko/docs/handbook/decorators.html#%EB%A9%94%ED%83%80%EB%8D%B0%EC%9D%B4%ED%84%B0-metadata)를 참조하십시오.
 
 
-# 메타데이터 (Metadata)
+## 메타데이터 (Metadata)
 
 일부 예제는 [실험적 메타데이터 API](https://github.com/rbuckton/ReflectDecorators)에 대한 폴리필(polyfill)을 추가하는 `reflect-metadata` 라이브러리를 사용합니다. 이 라이브러리는 아직 ECMAScript (JavaScript) 표준의 일부가 아닙니다. 그러나 데코레이터가 공식적으로 ECMAScript 표준의 일부로 채택되면 이러한 확장을 채택하게 될 것입니다.
 
