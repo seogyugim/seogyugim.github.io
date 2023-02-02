@@ -33,14 +33,13 @@ Aptos는 서명자를 저장하지 않고 서명자 기능을 저장합니다. �
 
 ## acquires
 
-유저가 구조체와 같은 글로벌 리소스를 사용할때마다 항상 먼저 이것을 획득(`acquire`)해야합니다. 예를 들어,  NFT 입출금시 `TokenStore`를 획득해야 합니다. 리소스를 획득하는 모듈 내부의 함수를 호출하는 다른 모듈의 함수가 있는 경우 첫 번째 함수에 `acquires()`로 레이블을 지정할 필요가 없습니다.
-Anytime you need to use any global resources, such as a struct, you should acquire it first. For example, both depositing and withdrawing an NFT acquire `TokenStore`. If you have a function in a different module that calls a function inside the module that acquires the resource, you don’t have to label the first function as `acquires()`.
+유저가 구조체와 같은 글로벌 리소스를 사용할때마다 항상 먼저 이것을 획득(`acquire`)해야합니다. 예를 들어,  NFT 입출금시 `TokenStore`를 획득해야 합니다. 리소스를 획득하는 모듈 내부의 함수를 호출하는 다른 모듈의 함수가 있는 경우, 첫 번째 함수에 `acquires()`로 레이블을 지정할 필요가 없습니다.
 
-This makes ownership clear since a resource is stored inside of an account. An account can decide if a resource may be created there. The module that defines that resource has power over reading and modifying that struct. So code inside that module needs to explicitly acquire that struct.
+리소스가 계정 내부에 저장되므로 소유권이 명확해집니다. 계정은 리소스를 생성할 수 있는지 여부를 결정할 수 있습니다. 해당 리소스를 정의하는 모듈은 해당 구조체를 읽고 수정하는 권한을 가집니다. 따라서 해당 모듈 내부의 코드는 해당 구조체를 명시적으로 획득해야 합니다.
 
-Still, anywhere you borrow or move in Move, you are automatically acquiring the resource. Use acquire for explicit inclusion for clarity. Similarly, the `exists()` function does not require the `acquires()` function.
+그래도 Move에서 빌리거나 이동하는 모든 위치에서 자동으로 리소스를 획득하게 됩니다. 명확성을 위해 명시적 포함을 위해 취득을 사용하십시오. 마찬가지로 `exists()` 함수에는 `acquires()` 함수가 필요하지 않습니다.
 
-Note: You can borrow global within your module from any account, from structs defined in your own module. You cannot borrow global outside of the module.
+참고: 자신의 모듈에 정의된 구조체에서 모든 계정의 모듈 내 전역(`global`)을 빌릴 수 있습니다. 모듈 외부에서 전역을 빌릴 수 없습니다.
 
 ## move_to
 
