@@ -50,11 +50,11 @@ hide_table_of_contents: true
 
 ### Aptos
 
-1. [Aptos 통합가이드](./Blockchain/Aptos/Aptos%20%ED%86%B5%ED%95%A9%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
-2. [Aptos 백서](./Blockchain//Aptos/Aptos%20Whitepaper.md)
-3. [Aptos Concepts](./Blockchain/Aptos/Concepts/Aptos%20Concepts.md)
-4. [Aptos의 Move](./Blockchain/Aptos/Move/Move%20on%20Aptos.md)
-5. [Aptos Move 구조](./Blockchain/Aptos/Move/Aptos%20Move%20Structure.md)
+1. [Aptos 통합가이드](./Blockchain/APT/Aptos%20%ED%86%B5%ED%95%A9%20%EA%B0%80%EC%9D%B4%EB%93%9C.md)
+2. [Aptos 백서](./Blockchain/APT/Aptos%20Whitepaper.md)
+3. [Aptos Concepts](./Blockchain/APT/Concepts/Aptos%20Concepts.md)
+4. [Aptos의 Move](./Blockchain/APT/Move/Move%20on%20Aptos.md)
+5. [Aptos Move 구조](./Blockchain/APT/Move/Aptos%20Move%20Structure.md)
 
 ## Backend
 
