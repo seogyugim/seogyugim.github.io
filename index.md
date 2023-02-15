@@ -1,5 +1,7 @@
 # 김서규의 노트 Seogyu's notes
 
+[how-to-go-root-dir](./how-to-go-root-dir.md)
+
 ## Blockhain
 
 ### 101
@@ -8,6 +10,10 @@
 2. [What is Checksum](Blockchain/101/2.md)
 3. [HD Wallet](./Blockchain/101/3.md)
 4. [Istanbul Bizantine Fault](./Blockchain/101/4.md)
+
+### BTC
+
+[Bitcoin Address Types](./Blockchain/BTC/address-type.md)
 
 ### Ethereum
 
