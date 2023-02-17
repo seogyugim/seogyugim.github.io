@@ -13,8 +13,8 @@
 
 ### BTC
 
-[Bitcoin Address Types](./Blockchain/BTC/address-type.md)
-[SPV (Simplified Payment Verification)](./Blockchain/BTC/spv.md)
+1. [Bitcoin Address Types](./Blockchain/BTC/address-types.md)
+2. [SPV (Simplified Payment Verification)](./Blockchain/BTC/spv.md)
 
 ### Ethereum
 
