@@ -16,6 +16,7 @@
 1. [Bitcoin Address](./Blockchain/BTC/address.md)
 2. [SPV (Simplified Payment Verification)](./Blockchain/BTC/spv.md)
 3. [Bitcoin Script](./Blockchain/BTC/script.md)
+4. [Bitcoin Segwit Transaction](./Blockchain/BTC/segwit.md)
 
 ### Ethereum
 
