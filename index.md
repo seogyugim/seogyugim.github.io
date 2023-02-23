@@ -2,6 +2,16 @@
 
 [how-to-go-root-dir](./how-to-go-root-dir.md)
 
+## Backend
+
+1. [NestJS, Cache-Manager v5 사용시 문제 해결법](./Backend/nestjs-cache-manager-v5-problem.md)
+2. [NestJS Dynamic Module 주의점](./Backend/nestjs-dyn-mod-warn.md)
+3. [데코레이터를 이용한 Nest.js에서의 AOP 적용](./Backend/aop-using-decorators.md)
+4. [개체 vs 객체](./Backend/object.md)
+5. [개체지향프로그래밍](./Backend/oop.md)
+6. [SOLID](./Backend/solid.md)
+7. [10만명이 이용하는 서비스를 구성하는 법](./Backend/how-to-10m-service.md)
+
 ## Blockhain
 
 ### 101
@@ -56,12 +66,6 @@
 2. [Aptos 백서](./Blockchain/APT/aptos-white-paper-in-korean.md)
 3. [Aptos의 Move](./Blockchain/APT/Move/move-on-aptos.md)
 4. [Aptos Move 구조](./Blockchain/APT/Move/aptos-structure.md)
-
-## Backend
-
-1. [NestJS, Cache-Manager v5 사용시 문제 해결법](./Backend/nestjs-cache-manager-v5-problem.md)
-2. [NestJS Dynamic Module 주의점](./Backend/nestjs-dyn-mod-warn.md)
-3. [데코레이터를 이용한 Nest.js에서의 AOP 적용](./Backend/aop-using-decorators.md)
 
 ## Languages
 
