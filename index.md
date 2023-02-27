@@ -11,6 +11,10 @@
 5. [개체지향프로그래밍](./Backend/oop.md)
 6. [SOLID](./Backend/solid.md)
 7. [10만명이 이용하는 서비스를 구성하는 법](./Backend/how-to-10m-service.md)
+8. [Http 요청을 최적화하는 방법](./Backend/how-to-reduce-http-req.md)
+9. [OOP](./Backend/oop.md)
+10. [Object](./Backend/object.md)
+11. [Upsert vs UK Constraint](./Backend/upsert-vs-constraint.md)
 
 ## Blockhain
 
@@ -86,3 +90,5 @@
 ## MySQL
 
 1. [how-to-query-with-transaction](./MySQL/how-to-query-with-transaction.md)
+2. [Best Isolation Level](./MySQL/best-isolation-lv.md)
+3. [ACID](./MySQL/acid.md)
