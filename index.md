@@ -15,6 +15,7 @@
 9. [OOP](./Backend/oop.md)
 10. [Object](./Backend/object.md)
 11. [대용량 데이터 인덱싱 작업에서 데이터베이스 부하 최적화 방법](./Backend/upsert-vs-constraint.md)
+12. [트렁크 기반 개발](./trunk-based-development.md)
 
 ## Blockhain
 
