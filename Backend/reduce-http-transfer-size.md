@@ -2,12 +2,20 @@
 
 ## 찾아본 방법
 
-1. 압축으로 사이즈 자체를 줄이는 것
-    1. CPU가 많이 든다
-2. 청킹(스트리밍)해서 응답을 쪼개는 법
-    1. 서버 상태에 따라서 응답이 너무 느려질 수 있을까 찾아봐야 함
+1. 종단 간 압축
+   ![종단 간 압축](https://developer.mozilla.org/en-US/docs/Web/HTTP/Compression/httpcompression1.png)
+    1. Accept-Encoding, Content-Encoding 클라이언트와 서버에서 헤더를 통해 정보를 주고 받는다
+    2. 이미지, 오디오나 비디오 등의 미디어 파일은 이미 압축되어 있을 확률이 높다.
+    3. CPU가 상대적으로 많이 든다.
+    4. gzip이 가장 보편적이며, 구글에서 개발한 br이 후발주자로 떠오른다.
+2. Hop-By-Hop 압축
+   ![Hop-By-Hop 압축](https://developer.mozilla.org/en-US/docs/Web/HTTP/Compression/httpcomp2.png)
+    1. 클라이언트와 서버 사이의 경로에 있는 노드들에서 압축이 발생한다.
+    2. Transfer-Encoding 헤더를 통해서 압축 방법을 주고 받는다.
+    3. 보통 프록시 계층에서 적용된다
 
 ## 참고 문서
 
 - [Web HTTP Compression](https://developer.mozilla.org/ko/docs/Web/HTTP/Compression)
 - [HTTP Headers Transfer-Encoding](https://developer.mozilla.org/ko/docs/Web/HTTP/Headers/Transfer-Encoding)
+- [ExpressJS Compression Middleware Library](https://github.com/expressjs/compression)
