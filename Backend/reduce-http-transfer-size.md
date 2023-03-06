@@ -1,7 +1,5 @@
 # HTTP Transfer 크기를 줄이는 법
 
-## 찾아본 방법
-
 1. 종단 간 압축
    ![종단 간 압축](https://developer.mozilla.org/en-US/docs/Web/HTTP/Compression/httpcompression1.png)
     1. Accept-Encoding, Content-Encoding 클라이언트와 서버에서 헤더를 통해 정보를 주고 받는다
