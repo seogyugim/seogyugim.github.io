@@ -37,6 +37,22 @@ TIME_WAIT 상태의 접속은 접속 테이블에서 1분동안 유지된다. �
 NodeJS에서의 우회적인 방법으로는 다음과 같은 방법이 있다.
 
 ```js
+var http = require( "http"),
+    agent = new http.Agent( {maxSockets: 1} );
+
+
+function httpRequest( callback ) {
+    var options = {
+            host: 'localhost',
+            port: 80,
+            path: '',
+
+            agent: agent
+        },
+...
+```
+
+```js
 var http = require("http");
 
 function httpRequest(callback) {
