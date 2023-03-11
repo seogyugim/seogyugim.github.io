@@ -113,6 +113,54 @@ n & ~(1 << i)
 
 </td>
 </tr>
+<tr>
+<td>
+공집합
+</td>
+<td>
+
+```
+int result = 0;
+```
+
+</td>
+</tr>
+<tr>
+<td>
+꽉 찬 집합
+</td>
+<td>
+
+```
+// A개의 원소를 가진 집합의 종류
+// 점화식으로는 (2**n) - 1
+int result = ((1 << A) - 1);
+```
+
+</td>
+</tr>
+<tr>
+<td>
+최소 원소 찾기
+</td>
+<td>
+
+```
+int firstBit = b & -b;
+```
+</td>
+</tr>
+<tr>
+<td>
+최소 원소 지우기
+</td>
+<td>
+
+```
+int removed = origin & (origin-1);
+```
+</td>
+</tr>
 </tbody>
 </table>
 
